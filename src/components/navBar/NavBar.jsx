@@ -1,6 +1,6 @@
 function NavBar() {
   return (
-    <div className="nav-bar sticky top-0 w-full py-3 flex items-center h-16 bg-white px-8 shadow-md justify-between">
+    <div className="nav-bar sticky top-0 z-50 w-full py-3 flex items-center h-16 bg-white px-8 shadow-md justify-between">
       <div className="logo flex items-center">
         <img
           src="logo.png"
