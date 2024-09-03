@@ -16,7 +16,7 @@ function MissionPage() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 3) % images.length);
-    }, 3000);
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
 
@@ -50,7 +50,7 @@ function MissionPage() {
       <div className="carousel relative flex justify-center items-center w-full ">
         <button
           onClick={handlePrevClick}
-          className="absolute left-60 text-2xl p-3  text-yellow-400 hover:bg-yellow-600 transition-colors"
+          className="absolute left-60 text-2xl p-3  text-yellow-400 hover:text-yellow-700 transition-colors"
           style={{ top: '50%', transform: 'translateY(-50%)' }}
         >
           <FaAngleLeft />
@@ -71,7 +71,7 @@ function MissionPage() {
         </div>
         <button
           onClick={handleNextClick}
-          className="absolute right-60 text-2xl p-3  text-yellow-400 hover:bg-yellow-600 transition-colors"
+          className="absolute right-60 text-2xl p-3  text-yellow-400 hover:text-yellow-700 transition-colors"
           style={{ top: '50%', transform: 'translateY(-50%)' }}
         >
           <FaAngleRight />
