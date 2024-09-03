@@ -1,14 +1,17 @@
+import ContentWrapper from './ContentWrapper';
+
 function HeroSection() {
   return (
-    <>
-      <div
-        className="hero-section h-[100vh] w-full bg-gray-50 flex items-center justify-center relative px-8"
-        style={{
-          backgroundImage:
-            "url('https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
-          backgroundSize: '100% 100%',
-        }}
-      >
+    <div
+      className="hero-section h-[100vh] w-full bg-gray-50 relative px-8"
+      style={{
+        backgroundImage:
+          "url('https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      <ContentWrapper>
         <div className="content text-center w-full flex justify-center items-center flex-col">
           <h1 className="text-5xl font-bold text-yellow-600">
             Your trusted partner for software development excellence
@@ -19,8 +22,8 @@ function HeroSection() {
             user experience.
           </p>
         </div>
-      </div>
-    </>
+      </ContentWrapper>
+    </div>
   );
 }
 
