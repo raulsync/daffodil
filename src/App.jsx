@@ -1,5 +1,6 @@
 import HeroSection from './components/HeroSection';
 import HighlightsPage from './components/HighlightsPage';
+import IndustryExpertise from './components/IndustriesExpertise';
 import MissionPage from './components/MissionPage';
 import NavBar from './components/NavBar';
 import RecognitionSection from './components/RecognitionSection';
@@ -14,6 +15,7 @@ function App() {
       <ServicePage />
       <HighlightsPage />
       <RecognitionSection />
+      <IndustryExpertise />
     </div>
   );
 }
