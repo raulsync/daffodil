@@ -2,6 +2,7 @@ import HeroSection from './components/HeroSection';
 import HighlightsPage from './components/HighlightsPage';
 import MissionPage from './components/MissionPage';
 import NavBar from './components/NavBar';
+import RecognitionSection from './components/RecognitionSection';
 import ServicePage from './components/ServicePage';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <MissionPage />
       <ServicePage />
       <HighlightsPage />
+      <RecognitionSection />
     </div>
   );
 }
